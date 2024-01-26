@@ -44,13 +44,7 @@ public function __construct($_title,$_actors,$_categories,$_duration,){
 $firstMovie = new Movie('Tre uominie una gamba','Aldo, Giovanni e Giacomo','Commedia','90');
 $secondMovie = new Movie('Casino Royale','Daniel Craig','Azione',120);
 
-var_dump($firstMovie);
-var_dump($secondMovie->getTitle())
-
-
-
-
-
+echo $firstMovie->getTitle();
 
 
 
