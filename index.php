@@ -18,38 +18,43 @@ mettendo ciascuna classe nel proprio file e magari raggruppare tutte le classi i
 organizzando il layout dividendo la struttura ed i contenuti in file e parziali dedicati.
 */
 ?>
-<?php
 
+<?php
 class Movie{
     public $title;
     public $actors;
     public $categories;
     public $duration;
 
-    // Costruttore della classe Movie
-    public function __construct($title, $actors, $categories, $duration) {
-        $this->title = $title;
-        $this->actors = $actors;
-        $this->categories = $categories;
-        $this->duration = $duration;
-    }
+public function __construct($_title,$_actors,$_categories,$_duration,){
+    $this->title = $_title;
+    $this->actors = $_actors;
+    $this->categories = $_categories;
+    $this->duration = $_duration;
 
-    // Metodo per ottenere il titolo del film
+}
+
+
+//RICORDA:"metodo" tipico di questa classe qua, a questo oggetto qua, se lo metto fuori è una funzione
     public function getTitle(){
         return $this->title;
     }
 }
 
-// Istanziazione dei due film
-$firstMovie = new Movie('Tre uomini e una gamba', 'Aldo, Giovanni e Giacomo', 'Commedia', 90);
-$secondMovie = new Movie('Casino Royale', 'Daniel Craig', 'Azione', 120);
+$firstMovie = new Movie('Tre uominie una gamba','Aldo, Giovanni e Giacomo','Commedia','90');
+$secondMovie = new Movie('Casino Royale','Daniel Craig','Azione',120);
 
-// Stampa dei titoli dei film
-echo $firstMovie->getTitle() . "<br>";
-echo $secondMovie->getTitle() . "<br>";
+var_dump($firstMovie);
+var_dump($secondMovie->getTitle())
+
+
+
+
+
+
+
 
 ?>
-
 
 
 
